@@ -97,7 +97,7 @@ pub mod file_reader {
 
                 let mut remove_result = process::Command::new("sh")
                     .arg("-c")
-                    .arg("rm -rf auto-commit-bot")
+                    .arg("rm -rf rust-study")
                     .spawn().unwrap().wait();
             }
 
