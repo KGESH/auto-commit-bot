@@ -10,7 +10,7 @@
 
 ## Target Project
 
-- ### This project
+- ### rust-study
 
 
 ---
