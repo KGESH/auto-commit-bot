@@ -35,7 +35,7 @@
 
 ### 1. Execute this binary
 ### 2. Check project_repo_url.txt exist in directory
-### 3. If project_repo_url.txt is empty then input your git remote repository url
+### 3. If 'project_repo_url.txt' is not exist then input your git remote repository url
 ### 4. Clone from remote repository
 ### 5. Change directory to cloned repository
 ### 6. If 'auto-commit.log' file is not exist then create 'auto-commit.log' file
