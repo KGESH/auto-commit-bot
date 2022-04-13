@@ -15,6 +15,22 @@
 
 ---
 
+## How to build
+
+<pre>git clone https://github.com/KGESH/auto-commit-bot</pre>
+
+<pre>cd auto-commit-bot</pre>
+
+<pre>cargo build --release</pre>
+
+---
+
+## Run
+
+<pre>target/release/auto-commit</pre>
+
+---
+
 ## Sequence
 
 ### 1. Execute this binary
