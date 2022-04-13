@@ -38,10 +38,12 @@
 ### 3. If project_repo_url.txt is empty then input your git remote repository url
 ### 4. Clone from remote repository
 ### 5. Change directory to cloned repository
-### 6. If README.md file is not exist then create README.md file
-### 7. Open README.md file to write mode
-### 8. Append string to README.md file and close file
+### 6. If 'auto-commit.log' file is not exist then create 'auto-commit.log' file
+### 7. Open 'auto-commit.log' file to write mode
+### 8. Append current date to 'auto-commit.log' file and close file
 ### 9. Git add all files
 ### 10. Git commit -m 'something string'
 ### 11. Git push
-### 12. Done
+### 12. Remove clone repository
+### 13. Done
+
