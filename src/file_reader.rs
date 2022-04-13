@@ -67,36 +67,37 @@ pub mod file_reader {
 
 
     pub fn run() {
+        let test_repo_name = "auto-commit-bot";
         let file_name = "project_repo_url.txt";
         let url = check_txt_file(&file_name);
 
         match clone_repository(&url) {
             Ok(_) => {
                 println!("Success Clone Repo");
-                append_string_to_file("rust-study/auto-commit.log", &chrono::Local::now().to_string());
+                append_string_to_file("./auto-commit-bot/auto-commit.log", &chrono::Local::now().to_string());
 
                 /* Todo: Extract function */
                 let mut add_result = process::Command::new("sh")
                     .arg("-c")
-                    .current_dir("rust-study")
+                    .current_dir(test_repo_name)
                     .arg("git add .")
                     .spawn().unwrap().wait();
 
                 let mut commit_result = process::Command::new("sh")
                     .arg("-c")
-                    .current_dir("rust-study")
+                    .current_dir(test_repo_name)
                     .arg("git commit -m 'auto-commit'")
                     .spawn().unwrap().wait();
 
                 let mut push_result = process::Command::new("sh")
                     .arg("-c")
-                    .current_dir("rust-study")
+                    .current_dir(test_repo_name)
                     .arg("git push origin main")
                     .spawn().unwrap().wait();
 
                 let mut remove_result = process::Command::new("sh")
                     .arg("-c")
-                    .arg("rm -rf rust-study")
+                    .arg("rm -rf auto-commit-bot")
                     .spawn().unwrap().wait();
             }
 
