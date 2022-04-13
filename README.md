@@ -4,7 +4,7 @@
 
 ## Description
 
-- ### Select to project, then change README.md file.
+- ### Select to project, then update 'auto-commit.log' file.
 
 ---
 
