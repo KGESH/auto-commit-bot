@@ -1,1 +1,1 @@
-https://github.com/KGESH/auto-commit-bot.git
+https://github.com/KGESH/rust-study

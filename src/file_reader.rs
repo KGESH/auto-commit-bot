@@ -67,14 +67,14 @@ pub mod file_reader {
 
 
     pub fn run() {
-        let test_repo_name = "auto-commit-bot";
+        let test_repo_name = "rust-study";
         let file_name = "project_repo_url.txt";
         let url = check_txt_file(&file_name);
 
         match clone_repository(&url) {
             Ok(_) => {
                 println!("Success Clone Repo");
-                append_string_to_file("./auto-commit-bot/auto-commit.log", &chrono::Local::now().to_string());
+                append_string_to_file("rust-study/auto-commit.log", &chrono::Local::now().to_string());
 
                 /* Todo: Extract function */
                 let mut add_result = process::Command::new("sh")
